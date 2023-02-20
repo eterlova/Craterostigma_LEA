@@ -67,5 +67,10 @@ QUAST was used to compute basic transcriptome assembly stats using [quast.sh scr
 
 ## Transcriptome annotation with EnTAP
 
+EnTAP pipeline was used to select reading frames and annotate _Craterostigma_ transcriptome. Running EnTAP requires the config.ini and entap.sh files.
+
+
 * Hart AJ, Ginzburg S, Xu M, et al. EnTAP: Bringing faster and smarter functional annotation to non-model eukaryotic transcriptomes. Mol Ecol Resour. 2020;20:591–604. https://doi.org/10.1111/1755-0998.13106
 * Paysan-Lafosse T, Blum M, Chuguransky S, Grego T, Pinto BL, Salazar GA, Bileschi ML, Bork P, Bridge A, Colwell L, Gough J, Haft DH, Letunić I, Marchler-Bauer A, Mi H, Natale DA, Orengo CA, Pandurangan AP, Rivoire C, Sigrist CJA, Sillitoe I, Thanki N, Thomas PD, Tosatto SCE, Wu CH, Bateman A. InterPro in 2022. Nucleic Acids Research, Nov 2022, (doi: 10.1093/nar/gkac993)
+* diamond citation
+
