@@ -39,8 +39,6 @@ To orient myself at what the transcriptomic data looks like, I performed two QC 
 Busco analysis was performed with the [busco.sh script](busco.sh)
 The obtained results:
 
-***** Results: *****
-
         C:99.1%[S:3.3%,D:95.8%],F:0.2%,M:0.7%,n:425        
         421     Complete BUSCOs (C)                        
         14      Complete and single-copy BUSCOs (S)        
@@ -53,16 +51,16 @@ The obtained results:
 QUAST was used to compute basic transcriptome assembly stats using [quast.sh script](quast.sh)
 
 
-METRICS/TRANSCRIPTS                                    CratV4.1.12_2_20.transcripts  
- == BASIC TRANSCRIPTS METRICS (calculated without reference genome and gene database) == 
-Transcripts                                            230564                        
-
-Transcripts > 500 bp                                   166679                        
-Transcripts > 1000 bp                                  99941                         
-
-Average length of assembled transcripts                1091.246                      
-Longest transcript                                     17238                         
-Total length                                           251601940                     
-
-Transcript N50                                         3653     
+        METRICS/TRANSCRIPTS                                    CratV4.1.12_2_20.transcripts  
+        == BASIC TRANSCRIPTS METRICS (calculated without reference genome and gene database) == 
+        Transcripts                                            230564                        
+        
+        Transcripts > 500 bp                                   166679                        
+        Transcripts > 1000 bp                                  99941                         
+        
+        Average length of assembled transcripts                1091.246                      
+        Longest transcript                                     17238                         
+        Total length                                           251601940                     
+        
+        Transcript N50                                         3653     
 
