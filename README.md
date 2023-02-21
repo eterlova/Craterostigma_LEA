@@ -67,7 +67,7 @@ QUAST was used to compute basic transcriptome assembly stats using [quast.sh scr
 
 ## Transcriptome annotation with EnTAP
 
-EnTAP pipeline was used to select reading frames and annotate _Craterostigma_ transcriptome. Running EnTAP requires the [config.ini](config.ini) and [entap.sh](entap.sh) files. Frame selection was performed with GeneMarkS-T, similarity search was run against RefSeq and Uniprot DIAMOND databases (70% both similarity and coverage cut-offs), Pfam protein family assignment carried out with InterProScan. 
+EnTAP pipeline was used to select reading frames and annotate _Craterostigma_ transcriptome. Running EnTAP requires the [entap_config.ini](entap_config.ini) and [entap.sh](entap.sh) files. Frame selection was performed with GeneMarkS-T, similarity search was run against RefSeq and Uniprot DIAMOND databases (70% both similarity and coverage cut-offs), Pfam protein family assignment carried out with InterProScan. 
 
 
 * Hart AJ, Ginzburg S, Xu M, et al. EnTAP: Bringing faster and smarter functional annotation to non-model eukaryotic transcriptomes. Mol Ecol Resour. 2020;20:591–604. https://doi.org/10.1111/1755-0998.13106
