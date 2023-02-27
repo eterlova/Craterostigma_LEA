@@ -81,8 +81,8 @@ For each group of LEA proteins (_sensu lato_) reference sequences from Cotton, A
 ## Pylogenetic tree reconstruction
 Reconstruction of a phylogenetic tree for each sub-family of LEAs was carried out with IQ tree (standard bootstrap 100 generations):
 
-'''
+```
 path_to_iqtree -s Dehydrin_ClustalOmega_alignment_masked.nex -st AA -m TEST -b 100 -alrt 1000 -abayes 
-'''
+```
 
 
