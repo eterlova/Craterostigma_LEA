@@ -69,8 +69,20 @@ QUAST was used to compute basic transcriptome assembly stats using [quast.sh scr
 
 EnTAP pipeline was used to select reading frames and annotate _Craterostigma_ transcriptome. Running EnTAP requires the [entap_config.ini](entap_config.ini) and [entap.sh](entap.sh) files. Frame selection was performed with GeneMarkS-T, similarity search was run against RefSeq and Uniprot DIAMOND databases (70% both similarity and coverage cut-offs), Pfam protein family assignment carried out with InterProScan. 
 
+InterProScan run resulted in transcripts translated into protein sequenced and classified according to their Pfam domains. The transcipts annotated as LEA1-5, LEA18, Dehydrin, and SNP were extracted from the data set, the identical transcripts were removed.
 
 * Hart AJ, Ginzburg S, Xu M, et al. EnTAP: Bringing faster and smarter functional annotation to non-model eukaryotic transcriptomes. Mol Ecol Resour. 2020;20:591–604. https://doi.org/10.1111/1755-0998.13106
 * Paysan-Lafosse T, Blum M, Chuguransky S, Grego T, Pinto BL, Salazar GA, Bileschi ML, Bork P, Bridge A, Colwell L, Gough J, Haft DH, Letunić I, Marchler-Bauer A, Mi H, Natale DA, Orengo CA, Pandurangan AP, Rivoire C, Sigrist CJA, Sillitoe I, Thanki N, Thomas PD, Tosatto SCE, Wu CH, Bateman A. InterPro in 2022. Nucleic Acids Research, Nov 2022, (doi: 10.1093/nar/gkac993)
 * diamond citation
+
+## Amino acid sequence alignment
+For each group of LEA proteins (_sensu lato_) reference sequences from Cotton, Arabidopsis, and Barley were downloaded from InterProScan. When possible, only the verified sequences were included. These reference sequences and the _Craterostigma_ expressed protein sequences were aligned using ClustalOmega algorithm implemented in Geneious (in a sub-group specific manor). The reads were poorly aligned, so the regions with many gaps were masked and removed from the final alignement (saved as a copy file). The resulted sequences were extracted in NEXUS format.
+
+## Pylogenetic tree reconstruction
+Reconstruction of a phylogenetic tree for each sub-family of LEAs was carried out with IQ tree (standard bootstrap 100 generations):
+
+'''
+path_to_iqtree -s Dehydrin_ClustalOmega_alignment_masked.nex -st AA -m TEST -b 100 -alrt 1000 -abayes 
+'''
+
 
