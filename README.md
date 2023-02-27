@@ -14,14 +14,14 @@ The goal of this project is to obtain nucleotide sequences of the CDS regions of
 The assembled genomes and transcriptomes come from Van Buren et al. 2023 (the Plan Journal) and were obtrained from the authors of this paper. Both genomes and transcriptomes were assembled, whether the frame selection was performed is unclear. The transcriptome was in the form of nucleotide fasta file, the genome was in the form of translated proteins. However, the nucleotide sequences of the scaffolded genome is publically available on genomeevolution.org (ID 60082).
 
 Data directory structure
-- Craterostigma_vanBuren\\
+- Craterostigma_vanBuren
 
--- CratGenome\\
---- CratV4.1.12-2-20.proteins.fasta\\ 
---- CratV4.1.12-2-20.transcripts.fasta #not filtered by length\\
---- CratV4.1.all.gff\\
---- CratV4.1.all.maker.proteins.fasta\\
---- CratV4.1.GO_id2go.txt.txt\\
+-- CratGenome
+--- CratV4.1.12-2-20.proteins.fasta
+--- CratV4.1.12-2-20.transcripts.fasta #not filtered by length
+--- CratV4.1.all.gff
+--- CratV4.1.all.maker.proteins.fasta
+--- CratV4.1.GO_id2go.txt.txt
 
 -- CratTranscriptome
 --- sample_names.xlsx
