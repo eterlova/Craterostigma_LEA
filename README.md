@@ -85,4 +85,9 @@ Reconstruction of a phylogenetic tree for each sub-family of LEAs was carried ou
 path_to_iqtree -s Dehydrin_ClustalOmega_alignment_masked.nex -st AA -m TEST -b 100 -alrt 1000 -abayes 
 ```
 
+# Oropetium LEA
+
+genome and annotation (V2.1): https://genomevolution.org/coge/GenomeInfo.pl?gid=51527
+
+## Extract CDS regions from the genome assembly, translate them to amino acid sequence
 
