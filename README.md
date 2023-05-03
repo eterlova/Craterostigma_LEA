@@ -85,6 +85,12 @@ Reconstruction of a phylogenetic tree for each sub-family of LEAs was carried ou
 path_to_iqtree -s Dehydrin_ClustalOmega_alignment_masked.nex -st AA -m TEST -b 100 -alrt 1000 -abayes 
 ```
 
+## Obtain CDS regions from genomic data
+
+```
+gffread -x Craterostigma_CDS.fasta -g Craterostigma_plantagineum.faa CratV4.1.all.gff
+```
+
 # Oropetium LEA
 
 genome and annotation (V2.1): https://genomevolution.org/coge/GenomeInfo.pl?gid=51527
