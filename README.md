@@ -97,3 +97,6 @@ genome and annotation (V2.1): https://genomevolution.org/coge/GenomeInfo.pl?gid=
 
 ## Extract CDS regions from the genome assembly, translate them to amino acid sequence
 
+```
+gffread -C -M -y -x Craterostigma_CDS.fasta -g Craterostigma_plantagineum.faa CratV4.1.all.gff
+```
